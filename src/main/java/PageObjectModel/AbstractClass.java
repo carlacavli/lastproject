@@ -108,7 +108,7 @@ import java.util.concurrent.TimeUnit;
             Select select = new Select(dropdown);
             List<WebElement> list = select.getOptions();
 
-            select.selectByIndex(39);
+            select.selectByIndex(30);
         }
 
         public void verifyURL(String expectedResult) {

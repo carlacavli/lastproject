@@ -57,12 +57,12 @@ public class signinSteps extends AbstractClass{
     signinPage.zipCode();
     signinPage.mobilePhone();
     signinPage.featureReference();
-    signinPage.submitAccount();
+
     }
 
     @Then("^click on register button$")
     public void click_on_register_button() {
-
+        signinPage.submitAccount();
     }
 
 }

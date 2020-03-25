@@ -1,14 +1,25 @@
 package stepdefinition;
 
+import PageObjectModel.AbstractClass;
+import PageObjectModel.SigninPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.openqa.selenium.WebDriver;
+import utilities.Driver;
+import utilities.ReadProperties;
 
-public class BuyItemSteps {
+import java.util.concurrent.TimeUnit;
 
+public class BuyItemSteps extends AbstractClass {
+    WebDriver driver ;
+    SigninPage signinPage= new SigninPage();
 
     @Given("^Go to the yourlogo$")
     public void go_to_the_yourlogo() {
-
+        driver = Driver.getDriver();
+        driver.get(ReadProperties.getData( "URL" ) );
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @Given("^Click on Sign  in button$")

@@ -94,13 +94,13 @@ public class SigninPage extends AbstractClass {
     private WebElement zipCode;
 
     public void zipCode(){
-        sendKeysFunction(zipCode , ReadProperties.getData("Zip/Postal Code"));
+        sendKeysFunction(zipCode , ReadProperties.getData("ZipCode"));
     }
     @FindBy(id = "phone_mobile")
     private WebElement mobilePhone;
 
     public void mobilePhone(){
-        sendKeysFunction(mobilePhone , ReadProperties.getData("Mobile phone"));
+        sendKeysFunction(mobilePhone , ReadProperties.getData("Mobilephone"));
     }
     @FindBy(css = "input[id='alias']")
     private WebElement typeSecondTitle;
