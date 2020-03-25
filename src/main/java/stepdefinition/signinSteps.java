@@ -19,8 +19,8 @@ public class signinSteps extends AbstractClass{
 
     @Given("^go to yourlogo website$")
     public void go_to_yourlogo_website() {
-        driver = Driver.getDriver();
 
+        driver = Driver.getDriver();
         driver.get(ReadProperties.getData( "URL" ) );
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -51,6 +51,13 @@ public class signinSteps extends AbstractClass{
     signinPage.firstName();
     signinPage.lastName();
     signinPage.passWord();
+    signinPage.address();
+    signinPage.cityName();
+    signinPage.selectAstate();
+    signinPage.zipCode();
+    signinPage.mobilePhone();
+    signinPage.featureReference();
+    signinPage.submitAccount();
     }
 
     @Then("^click on register button$")
