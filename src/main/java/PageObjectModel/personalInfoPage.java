@@ -78,3 +78,4 @@ public class personalInfoPage extends AbstractClass {
         clickOnFunctionalities(SaveButton);
     }
 }
+//........
