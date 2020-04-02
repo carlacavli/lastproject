@@ -8,7 +8,7 @@ import cucumber.api.java.en.Then;
 
 public class BuyItemSteps extends AbstractClass {
 
-    BuyItem buyItem=new BuyItem();
+    BuyItem buyItem = new BuyItem();
 
     @Given("^Click on  the T-SHIRTS$")
     public void click_on_the_T_SHIRTS() {
@@ -16,6 +16,7 @@ public class BuyItemSteps extends AbstractClass {
         buyItem.clickonthsirts();
         scrollDown();
     }
+
     @Given("^Click on list$")
     public void click_on_list() {
         buyItem.clickOnListView();
@@ -48,6 +49,4 @@ public class BuyItemSteps extends AbstractClass {
     public void remove_item() {
         buyItem.remove();
     }
-
 }
-
